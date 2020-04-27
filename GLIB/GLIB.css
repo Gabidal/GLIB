@@ -1,0 +1,49 @@
+.init{
+    /*give the parameters to here and use them elsewhere*/
+    --bg: var(--base_color);
+    --border: var(--border_color);
+    --radius: var(--radius_size);
+    --text: var(--text_color);
+    --padding_start_size: var(--padding_start_size);
+    --padding_end_size: var(--padding_end_size);
+    --duration: var(--animation_time);
+    --base_button_width: var(--button_width);
+    --base_button_height: var(--button_height);
+}
+
+.bg{
+    background-color:var(--bg);
+}
+/*buttons*/
+
+.button{
+    border-color: var(--border);
+    border-radius: var(--radius);
+    color: var(--text);
+    padding: var(--padding_start_size);
+    transition: all var(--duration);
+
+    border-style: solid;
+    display: block;
+    text-align: center;
+    width: inherit;
+    height: inherit;
+}
+.button:hover{
+    padding: var(--padding_end_size);
+}
+
+.small{
+    width: calc(var(--base_button_width) / 2);
+    height: calc(var(--base_button_height) / 2);
+}
+
+.large{
+    width: calc(var(--base_button_width) * 2);
+    height: calc(var(--base_button_height) * 2);
+}
+
+.normal{
+    width: var(--base_button_width);
+    height: var(--base_button_height);
+}
