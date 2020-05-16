@@ -1,4 +1,4 @@
-<!doctype html>
+ <!doctype html>
 <!-- pitäiskö meijjän tehdä semmonen järjestelmä että se tunnistaa minkä kielinen se käyttäjä on ja sitten redirectaa sen siihen kieleen vastaavaan htmllään.-->
 <html>
 	<head>
@@ -7,75 +7,127 @@
 	</head>
 	<body>
 		<div class="banner-pic">
-			<div>
-				<a href="#"><h1>JC-AIRLINE</h1></a>
+				<a href="index.html"><img src="../IMG/logo_white_v.2.png"></a>
 				<p>Asiakasystävällistä lennätystä vuodesta 2015</p>
-			</div>
 		</div>
 		<nav class="navigator">
 			<ul>
 				<li><a href="#">Varaa lennot</a></li>
-				<li><a href="#">Kohteet</a></li>
+				<li><a href="kohteet.html">Kohteet</a></li>
 				<li><a href="#">Reittiohjeet</a></li>
-				<li><a href="#">Info</a></li>
-				<li><a href="#">Asiakaspalvelu</a></li>
+				<li><a href="info.html">Info</a></li>
+				<li><a href="asiakaspalvelu.html">Asiakaspalvelu</a></li>
 			</ul>
 		</nav>
 		<div class="wrapper">
 			<div class="offer">
-                <img src="/IMG/tarjous.jpg" width="400px" height="300px" alt="käsipari">
-				<div id="offer-text">
-					<h4>Tarjoukset</h4>
-						<ul>
-							<li>Ruotsi</li>
-							<li>Norja</li>
-							<li>Tanska</li>
-						</ul>
+                <img src="../IMG/tarjous.jpg" id="offer-pic" width="400px" height="300px" alt="käsipari">
+					<div id="offer-text">
+						<h4>Tarjoukset</h4>
+						<p>Tästä kevään tarjoukset huippuhinnoin.</p>
+						<p>Valitse kohdemaa:</p>
+							<ul>
+								<li><a href="#">Ruotsi</a></li>
+								<li><a href="#">Norja</a></li>
+								<li><a href="#">Tanska</a></li>
+							</ul>
+					</div>
+			</div>
+				<form class="forms">
+						<h1>VARAA MATKASI</h1>
+							<br>
+							<select id="country">
+								<option value ="country"> Mistä</option>
+								<option value ="finland">Helsinki</option>
+								<option value ="finland">Oulu</option>
+								<option value ="finland">Rovaniemi</option>
+								<option value ="sweden">Arlanda</option>
+								<option value ="sweden">Jöteborg</option>
+								<option value ="sweden">Mälmö</option>
+								<option value ="norway">Oslo</option>
+								<option value ="norway">Bergen</option>
+								<option value ="norway">Trondheim</option>
+								<option value ="denmark">Kööpenhamina</option>
+								<option value ="denmark">Billind</option>
+								<option value ="island">Keflag</option>
+							</select>			
+							<!--Tähän kaikki lähtömaat-->
+							<select id="country">
+								<option value ="country"> Mihin</option>
+								<option valua ="country"> Kaikki</option>
+								<option value ="finland">Helsinki</option>
+								<option value ="finland">Oulu</option>
+								<option value ="finland">Rovaniemi</option>
+								<option value ="sweden">Arlanda</option>
+								<option value ="sweden">Jöteborg</option>
+								<option value ="sweden">Mälmö</option>
+								<option value ="norway">Oslo</option>
+								<option value ="norway">Bergen</option>
+								<option value ="norway">Trondheim</option>
+								<option value ="denmark">Kööpenhamina</option>
+								<option value ="denmark">Billind</option>
+								<option value ="island">Keflag</option>
+							</select><br>
+							<h3>MATKUSTAJAT</h3>
+							<select id="Matkustajamäärä">
+								<option value ="henkilömäärä">Aikuiset</option>
+								<option value ="henkilömäärä">1</option>
+								<option value ="henkilömäärä">2</option>
+								<option value ="henkilömäärä">3</option>
+								<option value ="henkilömäärä">4</option>
+								<option value ="henkilömäärä">5</option>
+								<option value ="henkilömäärä">6</option>
+								<option value ="henkilömäärä">7</option>
+								<option value ="henkilömäärä">8</option>
+								<option value ="henkilömäärä">9</option>
+								<option value ="henkilömäärä">10</option>
+							</select>
+							<select id="Matkustajamäärä">
+								<option value ="henkilömäärä">Lapset</option>
+								<option value ="henkilömäärä">1</option>
+								<option value ="henkilömäärä">2</option>
+								<option value ="henkilömäärä">3</option>
+								<option value ="henkilömäärä">4</option>
+								<option value ="henkilömäärä">5</option>
+								<option value ="henkilömäärä">6</option>
+								<option value ="henkilömäärä">7</option>
+								<option value ="henkilömäärä">8</option>
+								<option value ="henkilömäärä">9</option>
+								<option value ="henkilömäärä">10</option>
+							</select><br>
+							<!--Tähän kaikki kohdemaat+ valinta että näyttää kaikki mahdolliset lennot valituille päiville-->
+							<br>
+							<label for="datemax">LÄHTÖ:</label><input type="date" id="datemax" name="datemax" min="" max="2022-01-01">
+							<label for="datemax">PALUU:</label><input type="date" id="datemax" name="datemax" min="" max="2022-01-01">
+							<br>
+							<input type="submit" id="button" value="VARAA"/>
+				</form>
+				<div class="hotelliauto">
+					<h3>HOTELLI JA VUOKRA-AUTO SAMALLA KERRALLA</h3>
+					<!--Tähän linkki eurocar ja booking/hotels-->
+					<a href="https://www.europcar.fi" target="_blank"><img src="../IMG/Europcar-Logo.jpg" width="100%" height="100%" alt="Europcar"></a>
+					<a href="https://www.booking.com/index.fi.html" target="_blank"><img src="../IMG/booking.jpg" width="100%" height="100%" alt="Europcar"></a>
+				</div>
+		</div>
+		</div>
+		<footer>
+			<div class="main-content">
+				<div class="vasen">
+					<a href="asiakaspalvelu.html">Asiakaspalvelu</a><br>
+					<br><a href="https://www.alko.fi" target="_blank">Lisäpalvelut</a><br>
+					<br><a href="#">Muut sivustot</a><br>
+				</div>
+				<div class="keski">
+					<a href="info.html">Usein kysytyt kysymykset</a><br>
+					<br><a href="https://www.booking.com/index.fi.html" target="_blank">Hotellit</a><br>
+					<br><a href="club.html">Club jäsenyys</a><br>
+				</div>
+				<div class="oikea">
+					<a href="info.html">Yritys</a><br>
+					<br><a href="https://www.booking.com/index.fi.html" target="_blank">Autovuokraukset</a><br>
+					<br><a href="http://www.mol.fi" target="_blank">Avoimet työpaikat</a><br>
 				</div>
 			</div>
-			<div>
-				<form class="forms">
-				<h1>Varaa matkasi</h1>
-					<br>
-					<input type="text" placeholder="Mistä">
-					<!--Tähän kaikki lähtömaat-->
-					<input type="text" placeholder="Mihin?">
-					<!--Tähän kaikki kohdemaat+ valinta että näyttää kaikki mahdolliset lennot valituille päiville-->
-					<br>
-					<input type="text" placeholder="Lähtöpäivä">
-					<input type="text" placeholder="Paluupäivä">
-					<br>
-					<input type="submit" name=""/>
-				</form>
-			</div>
-			<div class="box3">
-				<h3>Hotellit ja vuokra-autot samalla kerralla</h3>
-				<!--Tähän linkki eurocar ja booking/hotels-->
-			</div>
-		</div>
-		<footer id="footer">
-			<table>
-				<tr>
-					<th><a href="#">Asiakaspalvelu</a></th>
-					<th><a href="#">Lisäpalvelut</a></th>
-					<th><a href="#">Muut sivustot</a></th>
-				</tr>
-				<tr>
-					<td><a href`="#">Ota yhteyttä</a></td>
-					<td><a href`="#">Lennolle</a></td>
-					<td><a href`="#">Aurinkomatkat</a></td>
-				</tr>
-				<tr>
-					<td><a href`="#">Usein kysytyt kysymykset</a></td>
-					<td><a href`="#">Hotellit</a></td>
-					<td><a href`="#">Club jäsenyys</a></td>
-				</tr>
-				<tr>
-					<td><a href`="#">Hallinnoi varaustasi</a></td>
-					<td><a href`="#">Autovuokraukset</a></td>
-					<td><a href`="#">Avoimet työpaikat</a></td>
-				</tr>
-			</table>
 		</footer>
 	</body>
 </html>

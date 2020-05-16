@@ -1,23 +1,36 @@
 * {
 	margin: 0;
-	padding: 0;
+    padding: 0;
 }
+html, body{ 
+    min-height: 100vh;
+    overflow: auto;
+  }
+/*Yläpuolella html yleinen muotoilu*/
+/*Tästä alkaa banner muotoilu*/
 .banner-pic {
-	background-image: url("/IMG/pilvet.jpg");
+	background-image: url("../IMG/pilvet.jpg");
 	height: 250px;
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: cover;
+    background-size: cover;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    padding-top: 100px;
 }
 body {
 	background: linear-gradient(0deg, rgba(95,138,151,1) 0%, rgba(186,218,110,1) 42%, rgba(255,255,255,1) 100%);
     height: 100%;
 }
+/*Tähän loppuu banner muotoilu*/
+/* Tässä navigointipalkki muotoilu! */
 .navigator {
 	width: 100%;
 	height: 75px;
 	background-color: #bada6e;
-	display: flex;
+    display: flex;
     flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
@@ -25,19 +38,19 @@ body {
 .navigator ul li {
 	list-style: none;
     display: inline-block;
+    flex-wrap: inherit;
 	line-height: 75px;
 	background-color: #bada6e;
 }
 .navigator ul li a {
 	display: block;
 	text-decoration: none;
-	font-size: 20px;
+	font-size: 25px;
 	font-family: arial;
 	color: #ffffff;
 	padding: 0 20px;
 }
 .navigator ul li:hover {
-	flex: 100%;
 	color: black;
 	background-color: white;
 	transition: 0.8s;
@@ -47,77 +60,225 @@ body {
 	color: black;
 	transition: 0.8s;
 }
+/*Tässä navigointipalkki muotoilu loppuu!*/
+/*Tästä alkaa wrap, mikä pitää sivuston sisällön keskitettynä*/
 .wrapper {
-    width: 700px;
+    width: 1000px;
     margin: 0 auto;
+    padding-top: 20px;
 }
-
-#offer-text {
-    float: right;
-    margin: 5%;
-    font-size: 25px;
-}
-
-.wrapper div div ul li {
-    display: block;
+/*PÄÄSIVUN MUOTOILU*/
+/*Tästä alkaa ensimmäinen "boxi"*/
+.offer {
+    background-color: #efffca;
+    margin-bottom: 50px;
+    border: 2px;
     border-style: solid;
-    margin: 2px;
-    border-color: rgba(1, 182, 158, 0.253);
-    border-radius: 24px;
-    text-align: center;
-    box-sizing: border-box;
-}
-
-.wrapper div form input {
-    margin: 2px;
-}
-
-.box3 {
-	padding: 10px;
-	border-radius: 10px;
-	background-color: red;
-    text-align: center;
-    width: 40%;
-}
-
-#footer {
-    text-align: center;
-    background-color:rgba(95,138,151,1);
-    color: #ffffff;
-    padding: 20px;
-    position: relative;
-    bottom: 0;
-}
-
-.forms{
-    background-color: rgba(0, 0, 0, 0.397);
     border-color: rgba(0, 0, 0, 0.315);
-    border-style: solid;
-    height: 20%;
+    border-radius: 10px;
 }
+#offer-pic {
+    padding: 20px;
+    margin-left: 30px;
+}
+#offer-text {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    float: right;
+    text-align: center;
+    margin-right: 30px;
+    margin-top: 50px;
+    padding: 30px;
+    background-color: rgb(247, 255, 233);
+    font-size: 20px;
+    border-radius: 10px;
+}
+#offer-text h4{
+    color: black;
+}
+#offer-text ul {
+    list-style-type: none;
+    text-align: center;
+}
+#offer-text ul li{
+    padding: 5px;
+}
+#offer-text ul li a{
+    text-decoration: none;
+    color: black;
 
-input{
+}
+#offer-text ul li a:hover{
+    text-decoration: underline;
+    color: green;
+    transition: 0,8s;
+    
+}
+/*"boxi" päättyy*/
+/*Tästä alkaa matkan varaus muotoilu*/
+select {
+    padding: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    width: 99%;
+    color: grey;
+    border-color: rgba(1, 182, 158, 0.253);
+    border-radius: 5px;
+}
+select:hover{
+    background-color: rgba(0, 185, 0, 0.486);
+}
+.forms {
+    background-color: #efffca;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-top: 20px;
+    font-size: 25px;
+    display: block;
+    margin: 2px;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.315);
+    border-radius: 10px;
+}
+#datemax {
+    font-size: 25px;
+    margin: 2px;
     background: none;
     width: 99%;
-    height: 20px;
-    color: rgb(255, 255, 255);
-    border-radius: 24px;
+    height: 50px;
+    color: black;
+    background-color: white;
+    border-radius: 5px;
     border-style: solid;
     border-color: rgba(36, 194, 49, 0.322);
     transition: 0.16s;
     text-align: center;
 }
-
-input:hover{
+#datemax:hover{
     background-color: rgba(0, 185, 0, 0.486);
 }
-
+#button {
+    font-size: 25px;
+    margin: 2px;
+    background: none;
+    width: 30%;
+    height: 50px;
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: rgba(36, 194, 49, 0.322);
+    transition: 0.16s;
+    text-align: center;
+}
+#button:hover{
+    background-color: rgba(0, 185, 0, 0.486);
+}
 ::placeholder{
     color: rgb(255, 255, 255);
     text-align: center;
 }
-
-h1{
-    margin: 5px;
+/*tähän loppuu muotoilu PÄÄSIVULLA*/
+.hotelliauto {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
     text-align: center;
+    margin-top: 50px;
 }
+
+
+/*INFOSIVUN MUOTOILU*/
+.info {
+    padding: 30px;
+    background-color: red;
+
+}
+.info p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 30px;
+}
+
+/*ASIAKASPALVELUSIVU*/
+.aspa {
+    padding: 30px;
+    background-color: red;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.aspa p {
+    line-height: 30px;
+}
+
+
+/*KOHTEET*/
+.container {
+    width: 100%;
+    height: auto;
+    background: white;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.box {
+    width: 20%;
+    height: 300px;
+    background: red;
+    margin: 20px;
+    box-sizing: border-box;
+
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+._helsinki {
+    background-image: url(../IMG/helsinki.jpg);
+    height: 100%;
+    width: inherit;
+}
+
+
+
+
+
+/*Tässä alkaa footer*/
+footer {
+    bottom: 0px;
+    width: 100%;
+    background: rgb(190, 231, 136);
+    text-align: center;
+    font-size: 30px;
+
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
+footer a:hover{
+    color: green;
+}
+
+.main-content {
+    display: flex;
+
+}
+.vasen {
+    padding: 50px;
+    margin: auto;
+    
+    
+}
+.keski {
+    padding: 50px;
+    margin: auto;
+   
+    
+}
+.oikea {
+    padding: 50px;
+    margin: auto;
+    
+    
+}
+/*tähän loppuu footer*/
