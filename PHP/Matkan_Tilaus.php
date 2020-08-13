@@ -18,5 +18,6 @@
 
     $Mail_address =  isset($_POST['value']) ? $_POST['value'] : '';
 
-    echo $Mail_address;
+    echo "Lippu lähetetty osoitteeseen: ". $Mail_address;
+    
 ?>
