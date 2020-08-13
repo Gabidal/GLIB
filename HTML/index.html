@@ -33,10 +33,16 @@
 							</ul>
 					</div>
 			</div>
-				<form class="forms">
+			<!--
+				Tähän aijon muuttaa formin sillein että se toimisi ton php kanssa että saatais se lähetettyä sille asiakkaan sähköpostiin.
+				Vielä tämän jos saisin sanoa, laittakaa hei edes vähän documentaatiota että mä sit ymmärrän mikä tekee mitäkin, ei tarvitse laittaa jokaiselle riville mut olis iha
+				Hyvä asia jos jokaiselle ominausuudelle olis pieni documentaatio siitä miten ja mitä se tekee.
+			-->
+				<form action="../PHP/Matkan_Tilaus.php" method="post" class="forms">
 						<h1>VARAA MATKASI</h1>
 							<br>
-							<select id="country">
+							<!-- Lähtö maaa-->
+							<select id="country" name="source_country">
 								<option value ="country"> Mistä</option>
 								<option value ="finland">Helsinki</option>
 								<option value ="finland">Oulu</option>
@@ -51,8 +57,8 @@
 								<option value ="denmark">Billind</option>
 								<option value ="island">Keflag</option>
 							</select>			
-							<!--Tähän kaikki lähtömaat-->
-							<select id="country">
+							<!--Saapumis maa-->
+							<select id="country" name="dest_country">
 								<option value ="country"> Mihin</option>
 								<option valua ="country"> Kaikki</option>
 								<option value ="finland">Helsinki</option>
@@ -69,7 +75,8 @@
 								<option value ="island">Keflag</option>
 							</select><br>
 							<h3>MATKUSTAJAT</h3>
-							<select id="Matkustajamäärä">
+							<!-- Aikuisten määrä-->
+							<select id="Matkustajamäärä" name="Parent_Count">
 								<option value ="henkilömäärä">Aikuiset</option>
 								<option value ="henkilömäärä">1</option>
 								<option value ="henkilömäärä">2</option>
@@ -82,7 +89,8 @@
 								<option value ="henkilömäärä">9</option>
 								<option value ="henkilömäärä">10</option>
 							</select>
-							<select id="Matkustajamäärä">
+							<!-- Lapsien määrä-->
+							<select id="Matkustajamäärä" name="Child_count">
 								<option value ="henkilömäärä">Lapset</option>
 								<option value ="henkilömäärä">1</option>
 								<option value ="henkilömäärä">2</option>
@@ -97,9 +105,12 @@
 							</select><br>
 							<!--Tähän kaikki kohdemaat+ valinta että näyttää kaikki mahdolliset lennot valituille päiville-->
 							<br>
-							<label for="datemax">LÄHTÖ:</label><input type="date" id="datemax" name="datemax" min="" max="2022-01-01">
-							<label for="datemax">PALUU:</label><input type="date" id="datemax" name="datemax" min="" max="2022-01-01">
+							<!-- lähtö päivä-->
+							<label for="datemax">LÄHTÖ:</label><input type="date" id="datemax" name="date_of_departure" min="" max="2022-01-01">
+							<!-- paluu päivä-->
+							<label for="datemax">PALUU:</label><input type="date" id="datemax" name="return_date" min="" max="2022-01-01">
 							<br>
+							<!-- tämä läynnistää PHP/Matkan_Tilaus.php tiedoston jossa me lähetetään nämä informaatiot asiakkaalle.-->
 							<input type="submit" id="button" value="VARAA"/>
 				</form>
 				<div class="hotelliauto">
