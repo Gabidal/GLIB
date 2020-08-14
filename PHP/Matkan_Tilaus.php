@@ -9,7 +9,7 @@
     //nopea testi että saako kaikki variablet oikeat arvot :D
     //echo $source_country. $dest_country. $Parent_Count. $Child_count. $date_of_departure. $return_date
 
-    //tähän tulee sähkö postin osoitteen otto
+    //tähän tulee sähköpostin osoitteenotto
     //joku jolla on hyvä tyyli maku tuu tekee tästä parempaa :D.
     echo "<form method=\"post\" action=\"\">";
     echo "<input type=\"text\" name=\"value\" placeholder=\"Sähköpostinne\">";

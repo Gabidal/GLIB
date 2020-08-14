@@ -1,6 +1,7 @@
  <!doctype html>
  <!--index.html-->
 <!-- pitäiskö meijjän tehdä semmonen järjestelmä että se tunnistaa minkä kielinen se käyttäjä on ja sitten redirectaa sen siihen kieleen vastaavaan htmllään.-->
+<!--Asiakkaan toiveiden mukaisesti muutetut asiat (14.8.): Hae matkaa-->
 <html>
 	<head>
 		<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,11 +10,10 @@
 	<body>
 		<div class="banner-pic">
 				<a href="index.html"><img src="../IMG/logo_white_v.2.png"></a>
-				<p>Asiakasystävällistä lennätystä vuodesta 2015</p>
+				<p>Lennämme vittuun vuodesta 2015</p>
 		</div>
 		<nav class="navigator">
 			<ul>
-				<li><a href="index.html">Varaa lennot</a></li>
 				<li><a href="kohteet.html">Kohteet</a></li>
 				<li><a href="#">Reittiohjeet</a></li>
 				<li><a href="info.html">Info</a></li>
@@ -40,7 +40,7 @@
 				Hyvä asia jos jokaiselle ominausuudelle olis pieni documentaatio siitä miten ja mitä se tekee.
 			-->
 				<form action="../PHP/Matkan_Tilaus.php" method="post" class="forms">
-						<h1>VARAA MATKASI</h1>
+						<h1>HAE MATKAA</h1>
 							<br>
 							<!-- Lähtö maaa-->
 							<select id="country" name="source_country">
