@@ -10,7 +10,7 @@ html, body{
 /*Tästä alkaa banner muotoilu*/
 .banner-pic {
 	background-image: url("../IMG/pilvet.jpg");
-	height: 250px;
+	height: 30%;
 	background-position: center;
 	background-repeat: no-repeat;
     background-size: cover;
@@ -20,6 +20,16 @@ html, body{
     color: white;
     padding-top: 100px;
 }
+
+.banner-pic a img{
+    width: 100vw;
+    height: 20vw;
+}
+
+.banner-pic p{
+    font-size: 2vw;
+}
+
 body {
 	background: linear-gradient(0deg, rgba(95,138,151,1) 0%, rgba(186,218,110,1) 42%, rgba(255,255,255,1) 100%);
     height: 100%;
@@ -27,28 +37,26 @@ body {
 /*Tähän loppuu banner muotoilu*/
 /* Tässä navigointipalkki muotoilu! */
 .navigator {
-	width: 100%;
-	height: 75px;
-	background-color: #bada6e;
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
+	background-color: #bada6e;
 }
 .navigator ul li {
 	list-style: none;
     display: inline-block;
     flex-wrap: inherit;
-	line-height: 75px;
 	background-color: #bada6e;
 }
 .navigator ul li a {
 	display: block;
 	text-decoration: none;
-	font-size: 25px;
+	font-size: 3vw;
 	font-family: arial;
-	color: #ffffff;
-	padding: 0 20px;
+    color: #ffffff;
+    margin: 2vw;
+    padding: 2vw;
 }
 
 /*Tähän alle linkin muotoilut*/
@@ -97,15 +105,20 @@ a:active - a link the moment it is clicked*/
 /*Tässä navigointipalkki muotoilu loppuu!*/
 /*Tästä alkaa wrap, mikä pitää sivuston sisällön keskitettynä*/
 .wrapper {
-    width: 1000px;
+    width: 90%;
     margin: 0 auto;
     padding-top: 20px;
 }
 /*PÄÄSIVUN MUOTOILU*/
 /*Tästä alkaa ensimmäinen "boxi"*/
 .offer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     background-color: #efffca;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     border: 2px;
     border-style: solid;
     border-color: rgba(0, 0, 0, 0.315);
@@ -113,19 +126,24 @@ a:active - a link the moment it is clicked*/
 }
 
 #offer-pic {
-    padding: 20px;
     margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    width: 30.0vw;
+    height: 20.0vw;
 }
 #offer-text {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    float: right;
     text-align: center;
-    margin-right: 30px;
-    margin-top: 50px;
-    padding: 30px;
     background-color: rgb(247, 255, 233);
-    font-size: 20px;
+    font-size: 1.5vw;
     border-radius: 10px;
+
+    margin-left: 30px;
+    margin-right: 30px;
+
 }
 #offer-text h4{
     color: black;
@@ -166,7 +184,7 @@ select:hover{
     background-color: #efffca;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding-top: 20px;
-    font-size: 25px;
+    font-size: 2vw;
     display: block;
     margin: 2px;
     text-align: center;
@@ -177,11 +195,10 @@ select:hover{
     border-radius: 10px;
 }
 #datemax {
-    font-size: 25px;
+    font-size: 2vw;
     margin: 2px;
     background: none;
     width: 99%;
-    height: 50px;
     color: black;
     background-color: white;
     border-radius: 5px;
@@ -194,11 +211,10 @@ select:hover{
     background-color: rgba(0, 185, 0, 0.486);
 }
 #button {
-    font-size: 25px;
+    font-size: 2vw;
     margin: 2px;
     background: none;
     width: 30%;
-    height: 50px;
     color: black;
     background-color: white;
     border-radius: 5px;
@@ -217,7 +233,7 @@ select:hover{
 /*tähän loppuu muotoilu PÄÄSIVULLA*/
 .hotelliauto {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 20px;
+    font-size: 2vw;
     text-align: center;
     margin-top: 50px;
 }
@@ -276,6 +292,11 @@ select:hover{
     background-image: url(../IMG/helsinki.jpg);
     height: 100%;
     width: inherit;
+}
+
+.Selector{
+    font-size: 2vw;
+    align-items: center;
 }
 
 
@@ -359,22 +380,19 @@ footer a:hover{
 
 }
 .vasen {
-    padding: 50px;
+    padding: 10%;
     margin: auto;
-    
-    
+    font-size: 2vw;
 }
 .keski {
-    padding: 50px;
+    padding: 10%;
     margin: auto;
-   
-    
+    font-size: 2vw;
 }
 .oikea {
-    padding: 50px;
+    padding: 10%;
     margin: auto;
-    
-    
+    font-size: 2vw;
 }
 /*tähän loppuu footer*/
 

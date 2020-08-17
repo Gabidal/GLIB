@@ -25,14 +25,15 @@
 			<div class="offer">
                 <img src="../IMG/tarjous.jpg" id="offer-pic" width="400px" height="300px" alt="käsipari">
 					<div id="offer-text">
-						<h4>Tarjoukset</h4>
+						<h4><br/>Tarjoukset</h4>
 						<p>Tästä kevään tarjoukset huippuhinnoin.</p>
 						<p>Valitse kohdemaa:</p>
 							<ul>
 								<li><a href="#">Ruotsi</a></li>
 								<li><a href="#">Norja</a></li>
-								<li><a href="#">Tanska</a></li>
+								<li><a href="#">Tanska</a></li><br/>
 							</ul>
+							
 					</div>
 			</div>
 			<!--
@@ -44,7 +45,7 @@
 						<h1>HAE MATKAA</h1>
 							<br>
 							<!-- Lähtö maaa-->
-							<select id="country" name="source_country">
+							<select class="Selector" name="source_country">
 								<option value ="country"> Mistä</option>
 								<option value ="Helsinki">Helsinki</option>
 								<option value ="Oulu">Oulu</option>
@@ -60,9 +61,9 @@
 								<option value ="Keflag">Keflag</option>
 							</select>			
 							<!--Saapumis maa-->
-							<select id="country" name="dest_country">
+							<select class="Selector" name="dest_country">
 								<option value ="country"> Mihin</option>
-								<option valua ="country"> Kaikki</option>
+								<option value ="country"> Kaikki</option>
 								<option value ="Helsinki">Helsinki</option>
 								<option value ="Oulu">Oulu</option>
 								<option value ="Rovaniemi">Rovaniemi</option>
@@ -78,7 +79,7 @@
 							</select><br>
 							<h3>MATKUSTAJAT</h3>
 							<!-- Aikuisten määrä-->
-							<select id="Matkustajamäärä" name="Parent_Count">
+							<select class="Selector" name="Parent_Count">
 								<option value ="henkilömäärä">Aikuiset</option>
 								<option value ="1">1</option>
 								<option value ="2">2</option>
@@ -92,7 +93,7 @@
 								<option value ="10">10</option>
 							</select>
 							<!-- Lapsien määrä-->
-							<select id="Matkustajamäärä" name="Child_count">
+							<select class="Selector" name="Child_count">
 								<option value ="henkilömäärä">Lapset</option>
 								<option value ="1">1</option>
 								<option value ="2">2</option>
@@ -110,7 +111,7 @@
 							<!-- lähtö päivä-->
 							<label for="datemax">LÄHTÖ:</label><input type="date" id="datemax" name="date_of_departure" min="" max="2022-01-01">
 							<!-- paluu päivä-->
-							<label for="datemax">PALUU:</label><input type="date" id="datemax" name="return_date" min="" max="2022-01-01">
+							<label for="datemax">PALUU:</label><input type="date"  id="datemax" name="return_date" min="" max="2022-01-01">
 							<br>
 							<!-- tämä läynnistää PHP/Matkan_Tilaus.php tiedoston jossa me lähetetään nämä informaatiot asiakkaalle.-->
 							<input type="submit" id="button" value="VARAA"/>
