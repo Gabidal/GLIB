@@ -296,7 +296,18 @@ select:hover{
 
 .Selector{
     font-size: 2vw;
+    width: 99%;
     align-items: center;
+}
+
+.in{
+    font-size: 2vw;
+    width: 99%;
+    align-items: center;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgba(77, 224, 48, 0.514);
 }
 
 
