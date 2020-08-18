@@ -27,8 +27,6 @@
     //tähän tulee sähköpostin osoitteenotto
     //joku jolla on hyvä tyyli maku tuu tekee tästä parempaa :D.
 
-    echo $content;
-
     mail($Mail_address, "Lento lipunne olkaa hyvä!", $content);
     echo "<p class=\"glass-text\">Lippu lähetetty osoitteeseen: </p>". "<p class=\"glass-text\"> $Mail_address </p>";
 

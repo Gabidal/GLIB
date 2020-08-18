@@ -44,15 +44,13 @@ body {
 	background-color: #bada6e;
 }
 .navigator ul li {
-	list-style: none;
     display: inline-block;
-    flex-wrap: inherit;
 	background-color: #bada6e;
 }
 .navigator ul li a {
 	display: block;
 	text-decoration: none;
-	font-size: 3vw;
+	font-size: 2vw;
 	font-family: arial;
     color: #ffffff;
     margin: 2vw;
@@ -100,6 +98,25 @@ a:visited - a link the user has visited
 a:hover - a link when the user mouses over it
 a:active - a link the moment it is clicked*/
 
+.Reitit {
+    align-items: center;
+    align-content: center;
+    font-size: 2vw;
+    padding: 5px;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.Reitit img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.Reitit h1{
+    background-color: rgba(172, 255, 47, 0.274);
+}
 
 
 /*Tässä navigointipalkki muotoilu loppuu!*/
@@ -270,25 +287,17 @@ select:hover{
 
 /*KOHTEET*/
 .container {
-    width: 100%;
-    height: auto;
-    background: white;
-
+    width: 90%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    flex-wrap: nowrap;
 }
-.box {
-    width: 20%;
-    height: 300px;
-    background: rgba(255, 0, 0, 0.397);
-    margin: 20px;
-    box-sizing: border-box;
+.container a img{
+    height: 18vw;
+    width: 19.6vw;
+    margin: 0.1vw;
+}
 
-    text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    
-}
 ._helsinki {
     background-image: url(../IMG/helsinki.jpg);
     height: 100%;
