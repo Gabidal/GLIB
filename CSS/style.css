@@ -247,7 +247,8 @@ select:hover{
 /*INFOSIVUN MUOTOILU*/
 .info {
     padding: 30px;
-    background-color: red;
+	font-size: 150%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
 }
 .info p {
@@ -258,7 +259,7 @@ select:hover{
 /*ASIAKASPALVELUSIVU*/
 .aspa {
     padding: 30px;
-    background-color: red;
+	font-size: 150%;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
 }
