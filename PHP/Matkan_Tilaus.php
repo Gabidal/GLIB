@@ -6,35 +6,20 @@
 	<link rel="stylesheet" type="text/css" href="../CSS/style.css"/>
 </head>
 <body>
+        <h1> Lippu on lähetetty sähköpostiinne. </h1>
+        <h2> Voit palata takaisin </h2>
 </body>
 
 </html>
 <?php
+    $LA = isset($_POST['Lähtö_Aika']) ? $_POST['Lähtö_Aika'] : '';
+    $PA= isset($_POST['Paluu_Aika']) ? $_POST['Paluu_Aika'] : '';
 
-    $source_country = isset($_POST['source_country']) ? $_POST['source_country'] : '';
-    $dest_country = isset($_POST['dest_country']) ? $_POST['dest_country'] : '';
-    $Parent_Count = isset($_POST['Parent_Count']) ? $_POST['Parent_Count'] : '';
-    $Child_count = isset($_POST['Child_count']) ? $_POST['Child_count'] : '';
-    $date_of_departure = new DateTime(isset($_POST['date_of_departure']) ? $_POST['date_of_departure'] : '');
-    $return_date = new DateTime(isset($_POST['return_date']) ? $_POST['return_date'] : '');
-    $Mail_address =  isset($_POST['value']) ? $_POST['value'] : '';
+    $Variables = unserialize(file_get_contents("tiedot.txt"));
 
-    $content = "Lento lippu varattu: ". $date_of_departure->format('d.m.Y'). lentomies(). "\nPaluu päivä: ". $return_date->format('d.m.Y'). lentomies().  "\nLähtö maa:". $source_country. "\nPäämäärä:". $dest_country. "\nAikuisten määrä:". $Parent_Count. "\nLasten määrä: ". $Child_count;
-
-    //nopea testi että saako kaikki variablet oikeat arvot :D
-    //echo $source_country. $dest_country. $Parent_Count. $Child_count. $date_of_departure. $return_date
-
-    //tähän tulee sähköpostin osoitteenotto
-    //joku jolla on hyvä tyyli maku tuu tekee tästä parempaa :D.
-
-    mail($Mail_address, "Lento lipunne olkaa hyvä!", $content);
-    echo "<p class=\"glass-text\">Lippu lähetetty osoitteeseen: </p>". "<p class=\"glass-text\"> $Mail_address </p>";
-
-    echo "</form>";
-
-
-    function lentomies(){
-        return " ". rand(7, 22). ":". rand(0, 3) * 15;
-    }
-
+    $content = "Lähtö Päivä: ". $Variables[6]. " ".$LA.  "\nPaluu päivä: ". $Variables[5]. " ". $PA. "\nLähtö maa:". $Variables[0]. "\nPäämäärä:". $Variables[1]. "\nAikuisten määrä:". $Variables[2]. "\nLasten määrä: ". $Variables[3];
+    //echo $content;
+    mail($Variables[4], "Lento lipunne olkaa hyvä!", $content);
+    //echo "<p class=\"glass-text\">Lippu lähetetty osoitteeseen: </p>". "<p class=\"glass-text\"> $Mail_address </p>";
+    
 ?>

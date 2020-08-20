@@ -1,0 +1,281 @@
+[
+    {
+        "LähtöMaa": "Helsinki",
+        "PaluuMaa": ["Tikkakoski"],
+        "LENNOT": [
+            {
+                "JUMBO":[],
+                "MID":[
+                    "00:00",
+                    "06:00",
+                    "12:00"
+                ],
+                "SMALL":[
+                    "00:30",
+                    "03:00",
+                    "06:30",
+                    "09:00",
+                    "12:30"
+                ]
+            }
+        ]
+    },    
+    {
+        "LähtöMaa": "Rovaniemi",
+        "PaluuMaa": ["Tikkakoski"],
+        "LENNOT": [
+            {
+                "JUMBO":[],
+                "MID":[
+                    "00:00",
+                    "06:00",
+                    "12:00"
+                ],
+                "SMALL":[
+                    "00:30",
+                    "03:00",
+                    "06:30",
+                    "09:00",
+                    "12:30"
+                ]
+            }
+        ]
+    },  
+    {
+        "LähtöMaa": "Oulu",
+        "PaluuMaa": ["Tikkakoski"],
+        "LENNOT": [
+            {
+                "JUMBO":[],
+                "MID":[
+                    "00:00",
+                    "06:00",
+                    "12:00"
+                ],
+                "SMALL":[
+                    "00:30",
+                    "03:00",
+                    "06:30",
+                    "09:00",
+                    "12:30"
+                ]
+            }
+        ]
+    },
+    {
+        "LähtöMaa": "Keflavik",
+        "PaluuMaa": ["Tikkakoski"],
+        "LENNOT": [
+            {
+                "JUMBO":[],
+                "MID":[
+                    "00:00",
+                    "06:00",
+                    "12:00"
+                ],
+                "SMALL":[
+                    "00:30",
+                    "03:00",
+                    "06:30",
+                    "09:00",
+                    "12:30"
+                ]
+            }
+        ]
+    },
+    {
+        "LähtöMaa": "Tröndheim",
+        "PaluuMaa": ["Tikkakoski"],
+        "LENNOT": [
+            {
+                "JUMBO":[],
+                "MID":[
+                    "00:00",
+                    "06:00",
+                    "12:00"
+                ],
+                "SMALL":[
+                    "00:30",
+                    "03:00",
+                    "06:30",
+                    "09:00",
+                    "12:30"
+                ]
+            }
+        ]
+    },
+    {
+        "LähtöMaa": "Bergen",
+        "PaluuMaa": ["Tikkakoski"],
+        "LENNOT": [
+            {
+                "JUMBO":[],
+                "MID":[
+                    "00:00",
+                    "06:00",
+                    "12:00"
+                ],
+                "SMALL":[
+                    "00:30",
+                    "03:00",
+                    "06:30",
+                    "09:00",
+                    "12:30"
+                ]
+            }
+        ]
+    },
+    {
+        "LähtöMaa": "Oslo",
+        "PaluuMaa": ["Tikkakoski"],
+        "LENNOT": [
+            {
+                "JUMBO":[],
+                "MID":[
+                    "00:00",
+                    "06:00",
+                    "12:00"
+                ],
+                "SMALL":[
+                    "00:30",
+                    "03:00",
+                    "06:30",
+                    "09:00",
+                    "12:30"
+                ]
+            }
+        ]
+    },
+    {
+        "LähtöMaa": "Göteborg",
+        "PaluuMaa": ["Tikkakoski"],
+        "LENNOT": [
+            {
+                "JUMBO":[],
+                "MID":[
+                    "00:00",
+                    "06:00",
+                    "12:00"
+                ],
+                "SMALL":[
+                    "00:30",
+                    "03:00",
+                    "06:30",
+                    "09:00",
+                    "12:30"
+                ]
+            }
+        ]
+    },
+    {
+        "LähtöMaa": "Billand",
+        "PaluuMaa": ["Tikkakoski"],
+        "LENNOT": [
+            {
+                "JUMBO":[],
+                "MID":[
+                    "00:00",
+                    "06:00",
+                    "12:00"
+                ],
+                "SMALL":[
+                    "00:30",
+                    "03:00",
+                    "06:30",
+                    "09:00",
+                    "12:30"
+                ]
+            }
+        ]
+    },
+    {
+        "LähtöMaa": "Cöpenhagen",
+        "PaluuMaa": ["Tikkakoski"],
+        "LENNOT": [
+            {
+                "JUMBO":[],
+                "MID":[
+                    "00:00",
+                    "06:00",
+                    "12:00"
+                ],
+                "SMALL":[
+                    "00:30",
+                    "03:00",
+                    "06:30",
+                    "09:00",
+                    "12:30"
+                ]
+            }
+        ]
+    },
+    {
+        "LähtöMaa": "Malmö",
+        "PaluuMaa": ["Tikkakoski"],
+        "LENNOT": [
+            {
+                "JUMBO":[],
+                "MID":[
+                    "00:00",
+                    "06:00",
+                    "12:00"
+                ],
+                "SMALL":[
+                    "00:30",
+                    "03:00",
+                    "06:30",
+                    "09:00",
+                    "12:30"
+                ]
+            }
+        ]
+    },
+    {
+        "LähtöMaa": "Göteborg",
+        "PaluuMaa": ["Tikkakoski"],
+        "LENNOT": [
+            {
+                "JUMBO":[],
+                "MID":[
+                    "00:00"
+                ],
+                "SMALL":[
+                    "09:00"
+                ]
+            }
+        ]
+    },
+    {
+        "LähtöMaa": "Stockholm",
+        "PaluuMaa": ["Tikkakoski"],
+        "LENNOT": [
+            {
+                "JUMBO":[],
+                "MID":[
+                    "06:00"
+                ],
+                "SMALL":[
+                    "00:30",
+                    "03:00"
+                ]
+            }
+        ]
+    },
+    {
+        "LähtöMaa": "Tikkakoski",
+        "PaluuMaa": ["Helsinki", "Rovaniemi", "Oulu", "Keflavik", "Tröndheim", "Bergen", "Oslo", "Göteborg", "Billand", "Cöpenhagen", "Malmö", "Stockholm"],
+        "LENNOT": [
+            {
+                "JUMBO":[],
+                "MID":[
+                    "12:00"
+                ],
+                "SMALL":[
+                    "05:30",
+                    "07:00",
+                    "11:30"
+                ]
+            }
+        ]
+    }
+]
