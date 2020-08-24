@@ -62,25 +62,13 @@
 
     $Lähtö_Ajat = array();
     foreach(Sopivat_Lennot($Variables[0], $Variables[1], $jsonData) as $i){
-        foreach($i->LENNOT[0]->JUMBO as $j){
-            array_push($Lähtö_Ajat, $j);
-        }        
-        foreach($i->LENNOT[0]->MID as $j){
-            array_push($Lähtö_Ajat, $j);
-        }
-        foreach($i->LENNOT[0]->SMALL as $j){
+        foreach($i->LENNOT as $j){
             array_push($Lähtö_Ajat, $j);
         }
     }    
     $Paluu_Ajat = array();
     foreach(Sopivat_Lennot($Variables[1], $Variables[0], $jsonData) as $i){
-        foreach($i->LENNOT[0]->JUMBO as $j){
-            array_push($Paluu_Ajat, $j);
-        }        
-        foreach($i->LENNOT[0]->MID as $j){
-            array_push($Paluu_Ajat, $j);
-        }
-        foreach($i->LENNOT[0]->SMALL as $j){
+        foreach($i->LENNOT as $j){
             array_push($Paluu_Ajat, $j);
         }
     }
