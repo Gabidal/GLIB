@@ -51,7 +51,7 @@ body {
 .navigator ul li a {
 	display: block;
 	text-decoration: none;
-	font-size: 2vw;
+	font-size: 2.5vw;
 	font-family: arial;
     color: #ffffff;
     margin: 2vw;
@@ -100,6 +100,7 @@ a:hover - a link when the user mouses over it
 a:active - a link the moment it is clicked*/
 
 .Reitit {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     align-items: center;
     align-content: center;
     font-size: 2vw;
@@ -114,11 +115,6 @@ a:active - a link the moment it is clicked*/
     height: 100%;
 
 }
-
-.Reitit h1{
-    background-color: rgba(172, 255, 47, 0.274);
-}
-
 
 /*Tässä navigointipalkki muotoilu loppuu!*/
 /*Tästä alkaa wrap, mikä pitää sivuston sisällön keskitettynä*/
@@ -148,7 +144,6 @@ a:active - a link the moment it is clicked*/
     margin-right: 30px;
     margin-top: 10px;
     margin-bottom: 10px;
-
     width: 30.0vw;
     height: 20.0vw;
 }
@@ -158,7 +153,6 @@ a:active - a link the moment it is clicked*/
     background-color: rgb(247, 255, 233);
     font-size: 1.5vw;
     border-radius: 10px;
-
     margin-left: 30px;
     margin-right: 30px;
 
@@ -287,107 +281,43 @@ select:hover{
 
 
 /*KOHTEET*/
-.container {
-    width: 20%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+.sisältö {
+    padding: 20px;
 }
-.container a img{
+#lippu{
     height: 18vw;
     width: 19.6vw;
     margin: 1vw;
     border: solid;
     border-color: black;
-}
-/*.text-container {
-    width: 80%;
-    display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-
-    HUOM! Tekstit pitäisi saada hienosti columnisoitua
-}*/
-
-._helsinki {
-    background-image: url(../IMG/helsinki.jpg);
-    height: 100%;
-    width: inherit;
 }
-
-.Selector{
-    font-size: 2vw;
-    width: 99%;
-    align-items: center;
+#teksti1 {
+    float: right;
+    font-size: 2.8vw;
+    width: 70%;
 }
+#teksti2 {
+    font-size: 2.8vw;
+    float: right;
+    width: 70%;
 
-.in{
-    font-size: 2vw;
-    width: 99%;
-    align-items: center;
-    border-radius: 5px;
-    border-style: solid;
-    border-width: 2px;
-    border-color: rgba(77, 224, 48, 0.514);
 }
-
-
-.glass {
-    background-color: rgba(0, 168, 0, 0.637);
-    border-radius: 5px;
-    height:  5vw;
-    max-height: 90vw;
-    border-color: rgb(15, 110, 15);
-    margin-bottom: 5px;
-    font-size: 30px;
-    font-size: 3.5vw;
-    border-style: inset;
+#teksti3 {
+    font-size: 2.8vw;
+    float: right;
+    width: 70%;
 }
-
-.glass:hover{
-    transition: 0.3s;
-    background-color: rgba(90, 180, 0, 0.575);
+#teksti4 {
+    font-size: 2.8vw;
+    float: right;
+    width: 70%;
 }
-
-.glass-button{
-    border-radius: 5px;
-    background-color:  rgba(0, 168, 0, 0.637);
-    border-color: rgb(15, 110, 15);
-    font-size: 30px;
-    font-size: 3.5vw;
-    border-style: inset;
-    margin-bottom: 5px;
+#teksti5 {
+    font-size: 2.8vw;
+    float: right;
+    width: 70%;
 }
-
-.glass-button:hover{
-    transition: 0.3s;
-    background-color: rgba(90, 180, 0, 0.575);
-}
-
-.glass-text{
-    border-width: 2px;
-    border-radius: 5px;
-    border-style: inset;
-    background-color:  rgba(0, 168, 0, 0.637);
-    border-color: rgb(15, 110, 15);
-
-    font-size: 30px;
-    font-size: 3.5vw;
-    margin-bottom: 5px;
-    
-}
-
-.flat{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    background-color: rgba(84, 201, 84, 0.137);
-    margin: 5px;
-    border-radius: 5px;
-    text-align: center;
-}
-
-
 /*Tässä alkaa footer*/
 footer {
     bottom: 0px;
@@ -414,17 +344,17 @@ footer a:hover{
 .vasen {
     padding: 10%;
     margin: auto;
-    font-size: 2vw;
+    font-size: 2.5vw;
 }
 .keski {
     padding: 10%;
     margin: auto;
-    font-size: 2vw;
+    font-size: 2.5vw;
 }
 .oikea {
     padding: 10%;
     margin: auto;
-    font-size: 2vw;
+    font-size: 2.5vw;
 }
 /*tähän loppuu footer*/
 
