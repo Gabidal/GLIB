@@ -14,7 +14,7 @@
     array_push($Variables, $_POST['dest_country']);
     array_push($Variables, $_POST['Parent_Count']);
     array_push($Variables, $_POST['Child_count']);
-    array_push($Variables, $_POST['value']);
+    //array_push($Variables, $_POST['value']);
 
     $date_of_departure = new DateTime(isset($_POST['date_of_departure']) ? $_POST['date_of_departure'] : '');
     $return_date = new DateTime(isset($_POST['return_date']) ? $_POST['return_date'] : '');
@@ -89,8 +89,14 @@
     foreach ($Paluu_Ajat as $i){
         echo	"<option value =\"". $i. "\">". $i. "</option>";
     }
-	echo "</select>	";
-    echo "<input type=\"submit\" id=\"button\" value=\"VARAA\"/>";
+    echo "</select>	";    
+    echo "<br>";
+    echo "<h3>Sähköposti osoite</h3>";
+    echo "<br/>";
+    echo "<input class=\"in\" name=\"value\"/>";
+    echo "<br/>";
+    echo "<input type=\"submit\" id=\"button\" value=\"VARAA\"/>";							
+
     echo "</form>";
 
 ?>
